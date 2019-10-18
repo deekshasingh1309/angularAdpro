@@ -1,0 +1,182 @@
+[
+    {
+        "id": 1,
+        "FirstName": "Lewis",
+        "LastName": "Black",
+        "Address": "187 Suffolk Ln.",
+        "city": "Gurgaon",
+        "state": "Haryana",
+        "Orders": [
+            {
+                "Items": "Shoes",
+                "Cost": "$100"
+            },
+            {
+                "Items": "Basketball",
+                "Cost": "$120"
+            }
+        ],
+        "Order Total": "$220",
+        "Gender": "Male"
+    },
+    {
+        "id": 2,
+        "FirstName": "Janilia",
+        "LastName": "Black",
+        "address": "12158 Randall Port",
+        "city": "East Maureenbury",
+        "state": "NE",
+        "Orders": [
+            {
+                "Items": "Bat",
+                "Cost": "$160"
+            },
+            {
+                "Items": "Ball",
+                "Cost": "$120"
+            }
+        ],
+        "Order Total": "$280",
+        "Gender": "Female"
+    },
+    {
+        "id": 3,
+        "FirstName": "Jany",
+        "LastName": "Bow",
+        "address": "92027 Murphy Cove",
+        "city": "Port Malachi",
+        "state": "WY",
+        "Orders": [
+            {
+                "Items": "Shoes",
+                "Cost": "$150"
+            },
+            {
+                "Items": "Bed",
+                "Cost": "$620"
+            }
+        ],
+        "Order Total": "$770",
+        "Gender": "Female"
+    },
+    {
+        "id": 4,
+        "FirstName": "Weissnat",
+        "LastName": "Black",
+        "address": "45974 Paxton Corner",
+        "city": "Gerlachmouth",
+        "state": "OR",
+        "Orders": [
+            {
+                "Items": "Rack",
+                "Cost": "$1000"
+            }
+        ],
+        "Order Total": "$1000",
+        "Gender": "Male"
+    },
+    {
+        "id": 5,
+        "FirstName": "Boyle",
+        "LastName": "Hane",
+        "address": "54371 Mikel Spurs",
+        "city": "South Josephland",
+        "state": "SD",
+        "Orders": [
+            {
+                "Items": "Furniture",
+                "Cost": "$949.89"
+            }
+        ],
+        "Order Total": "$949.89",
+        "Gender": "Male"
+    },
+    {
+        "id": 6,
+        "FirstName": "Bernier",
+        "LastName": "Hane",
+        "address": "45929 Chaya Lane",
+        "city": "Hettingerchester",
+        "state": "GA",
+        "Orders": [
+            {
+                "Items": "Furniture",
+                "Cost": "$309.89"
+            }
+        ],
+        "Order Total": "$309.89",
+        "Gender": "Female"
+    },
+    {
+        "id": 7,
+        "FirstName": "Bery",
+        "LastName": "Hane",
+        "address": "582 Metz Harbor",
+        "city": "North Columbus",
+        "state": "HI",
+        "Orders": [
+            {
+                "Items": "Shoes",
+                "Cost": "$150"
+            },
+            {
+                "Items": "Bed",
+                "Cost": "$620"
+            }
+        ],
+        "Order Total": "$770",
+        "Gender": "Female"
+    },
+    {
+        "id": 8,
+        "FirstName": "Bella",
+        "LastName": "Lanne",
+        "address": "1577 Waters Alley",
+        "city": "New Sabrinahaven",
+        "state": "AR",
+        "Orders": [
+            {
+                "Items": "Mobile",
+                "Cost": "$569"
+            }
+        ],
+        "Order Total": "$569",
+        "Gender": "Female"
+    },
+    {
+        "id": 9,
+        "FirstName": "John",
+        "LastName": "Sena",
+        "address": "3710 Lew Walk",
+        "city": "Baileybury",
+        "state": "NJ",
+        "Orders": [
+            {
+                "Items": "Mobile",
+                "Cost": "$269"
+            }
+        ],
+        "Order Total": "$269",
+        "Gender": "Male"
+    },
+    {
+        "id": 10,
+        "FirstName": "Stoltenberg",
+        "LastName": "Sena",
+        "address": "93936 Barrows Dale",
+        "city": "Lake Guido",
+        "state": "AZ",
+        "Orders": [
+            {
+                "Items": "Specs",
+                "Cost": "$169.99"
+            },
+            {
+                "Items": "Bag",
+                "Cost": "$100.99"
+            }
+        ],
+        "Order Total": "$269.99",
+        "Gender": "Male"
+    }
+]

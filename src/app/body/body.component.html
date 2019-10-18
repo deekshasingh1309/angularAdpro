@@ -1,0 +1,34 @@
+<div class="header">
+    <button (click)="showcard(1)">Card View</button>
+    <button (click)="showlist(2)">List View</button>
+    <button (click)="showmap()">Map View</button>
+    <button (click)="showorders()">Orders</button>
+</div>
+<ng-container>
+    <div *ngIf="setcardview()">
+        <div class="card" *ngFor="let user of users">
+            <div class="top">
+                <h4>{{user.Firstname}}</h4>
+            </div>
+            <div class="line"></div>
+            <div class="card-group">
+                <div class="card-body">
+                    <img class="card-img-top" src="logo.jpeg" alt="Card image" style="width:100%">
+                </div>
+                <div class="card-body">
+                    <p class="card-title">{{user.city}}</p>
+                    <p class="card-text">{{user.state}} </p>
+                </div>
+            </div>
+            <a href="#" class="btn btn-primary" style=" width:120px">View Orders</a>
+        </div>
+    </div>
+    <div *ngIf="setlistview()">
+        <div class="container">
+            <h2>Basic Card</h2>
+            <div class="card">
+                <div class="card-body">Basic card</div>
+            </div>
+        </div>
+    </div>
+</ng-container>
