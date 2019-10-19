@@ -40,7 +40,6 @@ export class BodyComponent implements OnInit {
 
   ngOnInit() {
     this.ServerService.sendGetRequest().subscribe((data: any[]) => {
-      console.log(data);
       this.users = data;
     })
   }

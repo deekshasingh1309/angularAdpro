@@ -18,3 +18,21 @@
     border-bottom: 1px solid black;
     position: absolute;
     }
+.content{
+
+}
+
+.container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 95%;
+}
+.top{
+    height: 56px;
+    background-color: #248ffc;
+    color: white;
+    padding-left: 25px;
+}
+
