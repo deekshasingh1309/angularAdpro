@@ -7,40 +7,28 @@ import { ServerService } from '../server.service';
   styleUrls: ['./body.component.css']
 })
 export class BodyComponent implements OnInit {
-  users = [];
-  cardview = true;
-  listview = false;
-  mapview = false;
+  
+  public users:Array<Object>;
+  public displayType:any = 1;
 
-  showcard(type) {
-    if (type == 1) {
-      this.cardview = true; 
-      this.listview = false;
+  viewType(type:any) {
+    if (type == 1) { 
+      this.displayType = 1; 
     }
-    if (type == 2) {
-      this.cardview = false; 
-      this.listview = true;
+    else if (type == 2) { 
+      this.displayType = 2;    
     }
-  }
-
-  setcardview() {
-    if (this.cardview === true) {
-      return true
-    }
-    else if(this.listview===true) {
-      return true
-    }
-  }
-
-  setlistview() {
-    this.listview = true;
   }
 
   constructor(private ServerService: ServerService) { }
 
   ngOnInit() {
+    this.getUser()
+  }
+  
+  getUser(){
     this.ServerService.sendGetRequest().subscribe((data: any[]) => {
-      this.users = data;
+      this.users = data;      
     })
   }
 

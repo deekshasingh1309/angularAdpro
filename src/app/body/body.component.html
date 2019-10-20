@@ -1,13 +1,14 @@
 <div class="header">
-  <button (click)="showcard(1)">Card View</button>
-  <button (click)="showlist(2)">List View</button>
-  <button (click)="showmap()">Map View</button>
+  <button (click)="viewType(1)">Card View</button>
+  <button (click)="viewType(2)">List View</button>
+  <button (click)="viewType(3)">Map View</button>
   <button (click)="showorders()">Orders</button>
 </div>
-<div class="container-fluid">
+
+<div class="container-fluid" *ngIf="displayType == 1">
   <div class="row">
     <div class="col-sm-3 content" *ngFor="let user of users">
-      <div class="card" >
+      <div class="card">
         <div class="top">
           <h2 class="name">{{user.FirstName}}</h2>
         </div>
@@ -22,42 +23,34 @@
           </div>
         </div>
       </div>
-
     </div>
-    <!-- <div class="col-sm-3 content" style="background-color:rgb(196, 36, 89);">.col-sm-4</div>
-    <div class="col-sm-3 content" style="background-color:rgb(68, 49, 13);">.col-sm-4</div>
-    <div class="col-sm-3 content" style="background-color:rgb(68, 49, 13);">.col-sm-4</div>
-
-    <div class="col-sm-3" style="background-color:rgb(64, 223, 43);">.col-sm-4</div> -->
-
   </div>
 </div>
-
-<ng-container>
-  <div *ngIf="setcardview()">
-    <!-- <div class="card" *ngFor="let user of users">
-      <div class="top">
-        <h4>{{user.Firstname}}</h4>
-      </div>
-      <div class="line"></div>
-      <div class="card-group">
-        <div class="card-body">
-          <img class="card-img-top" src="logo.jpeg" alt="Card image" style="width:100%">
-        </div>
-        <div class="card-body">
-          <p class="card-title">{{user.city}}</p>
-          <p class="card-text">{{user.state}} </p>
-        </div>
-      </div>
-      <a href="#" class="btn btn-primary" style=" width:120px">View Orders</a>
-    </div> -->
-  </div>
-  <div *ngIf="setlistview()">
-    <div class="container">
-      <h2>Basic Card</h2>
-      <div class="card">
-        <div class="card-body">Basic card</div>
-      </div>
-    </div>
-  </div>
-</ng-container>
+<div class="container-fluid" *ngIf="displayType == 2">
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th> </th>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Address</th>
+        <th>City</th>
+        <th>State</th>
+        <th>Order Total</th>
+        <th> </th>
+      </tr>
+    </thead>
+    <tbody *ngFor="let user of users">
+      <tr class="tabledata">
+        <td>"image"</td>
+        <td>{{user.FirstName}}</td>
+        <td>{{user.LastName}}</td>
+        <td>{{user.address ? user.address : "----"}}</td>
+        <td>{{user.city}}</td>
+        <td>{{user.state}}</td>
+        <td>{{user.OrderTotal}}</td>
+        <td><a href="#" class="View" style=" width:120px">View Orders</a></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
