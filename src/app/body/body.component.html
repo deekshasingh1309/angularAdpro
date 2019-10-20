@@ -9,18 +9,18 @@
     <div class="col-sm-3 content" *ngFor="let user of users">
       <div class="card" >
         <div class="top">
-          <h2>{{user.FirstName}}</h2>
+          <h2 class="name">{{user.FirstName}}</h2>
         </div>
-        <div class="card-group">
+        <div class="card-group ">
           <div class="card-body">
-            <img class="card-img-top" src="logo.jpeg" alt="Card image" style="width:100%">
+            <!-- <img class="card-img-top" src="../../assets/manlogo.jpeg" alt="Card image" style="width:100%"> -->
           </div>
           <div class="card-body">
             <p class="card-title">{{user.city}}</p>
             <p class="card-text">{{user.state}} </p>
+            <a href="#" class="View" style=" width:120px">View Orders</a>
           </div>
         </div>
-        <a href="#" class="btn btn-primary" style=" width:120px">View Orders</a>
       </div>
 
     </div>
