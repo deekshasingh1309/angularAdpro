@@ -19,6 +19,8 @@
 		<p *ngIf="invalidEmail()" id="email_error" class="help-block">Invalid email address.</p>
 	</div>
 
+	
+
 	<div class="form-group" [ngClass]="{ 'has-error': invalidZipcode() }"> <!-- Zip Code-->
 		<label for="zipcode" class="control-label">Zip Code</label>
 		<input type="text" formControlName="zipcode" class="form-control" id="zipcode" name="zipcode" placeholder="#####">

@@ -1,8 +1,10 @@
+<h1><span class="glyphicon glyphicon-user"></span> Customers</h1>
 <div class="header">
   <button (click)="viewType(1)">Card View</button>
   <button (click)="viewType(2)">List View</button>
   <button (click)="viewType(3)">Map View</button>
-  <button (click)="showorders()">Orders</button>
+  <button >New Customer</button>
+  <span><input type="text" autocomplete="filter"/>Filter</span>
 </div>
 
 <div class="container-fluid" *ngIf="displayType == 1">
@@ -14,7 +16,7 @@
         </div>
         <div class="card-group ">
           <div class="card-body">
-            <!-- <img class="card-img-top" src="../../assets/manlogo.jpeg" alt="Card image" style="width:100%"> -->
+            <img class="card-img-top" src="../../assets/manlogo.jpeg" alt="Card image">
           </div>
           <div class="card-body">
             <p class="card-title">{{user.city}}</p>

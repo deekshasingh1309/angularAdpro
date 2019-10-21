@@ -6,11 +6,9 @@ body {
 .header {
     overflow: hidden;
     background-color: #248ffc;
-    padding: 20px 10px;
 }
 
 .header a {
-    float: left;
     color: black;
     text-align: center;
     padding: 12px;
@@ -33,6 +31,7 @@ body {
 .header a.active {
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
+    margin-left: 20px;
 }
 
 .header-right {
@@ -48,7 +47,7 @@ body {
 }
 
 .header-left {
-    float: none;
+   display: flex;
 }
 
 
@@ -56,17 +55,15 @@ body {
     float: right;
 }
 
-.leftlogo{
-    float: left;
-}
 .righttab{
     float: right;
     margin-right: 61%;
 }
 
-.h3, h3 {
+h3 {
     font-size: 24px;
     color: white;
+    margin-top: 0px !important;
 }
 
 .icon {
@@ -74,4 +71,8 @@ body {
     width: 5%;
     margin: 1px;
     margin-left: -202px;
+}
+
+.logo img {
+    width: 50px; 
 }

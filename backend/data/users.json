@@ -3,7 +3,7 @@
         "id": 1,
         "FirstName": "Lewis",
         "LastName": "Black",
-        "Address": "187 Suffolk Ln.",
+        "address": "187 Suffolk Ln.",
         "city": "Gurgaon",
         "state": "Haryana",
         "Orders": [

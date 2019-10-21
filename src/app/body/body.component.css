@@ -1,6 +1,6 @@
 .card{
     width: 290px;
-    height: 191px;
+    height: auto;
     display:flex;
     flex-wrap:row;
     justify-content: space-between    
@@ -8,8 +8,10 @@
 
 .header{
     display:flex;
-    flex-wrap:row;
-    justify-content: space-between    
+    flex-wrap:wrap;
+    justify-content: space-evenly; 
+    padding-bottom: 20px;
+    padding-top: 10px;
 }
 
 .line{
@@ -43,4 +45,20 @@
 }
 .tabledata{
     
+}
+
+.card-group {
+    display: flex
+}
+
+.card-body {
+    flex: 1 1 10%!important;
+}
+
+.card-body img {
+    width: 70px;
+}
+
+.header:nth-child(even) {
+ margin-left: 10px;
 }
